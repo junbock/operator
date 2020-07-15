@@ -9,7 +9,7 @@ public class Combination implements Calculator {
 		double up = 1.0;
 		double down = 1.0;
 		
-		if (num1 <= 0 || num2 <= 0) {
+		if (num1 < 0 || num2 < 0) {
 			return -1.0;
 		}
 		
