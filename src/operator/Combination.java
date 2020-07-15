@@ -1,7 +1,7 @@
 package operator;
-/* Á¶ÇÕ °è»ê±â
- * a°¡ bº¸´Ù Å©°Å³ª °°¾Æ¾ßÇÔ,¾Æ´Ï¸é -1 ¹ÝÈ¯
- * a¿Í b°¡ ÀÚ¿¬¼ö°¡ ¾Æ´Ï¸é -1 ¹ÝÈ¯
+/* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+ * aï¿½ï¿½ bï¿½ï¿½ï¿½ï¿½ Å©ï¿½Å³ï¿½ ï¿½ï¿½ï¿½Æ¾ï¿½ï¿½ï¿½,ï¿½Æ´Ï¸ï¿½ -1 ï¿½ï¿½È¯
+ * aï¿½ï¿½ bï¿½ï¿½ ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ï¸ï¿½ -1 ï¿½ï¿½È¯
  */
 public class Combination implements Calculator {
 	public double calculate(int num1, int num2) {
@@ -15,6 +15,8 @@ public class Combination implements Calculator {
 		if (num1 < num2) {
 			return -1.0;
 		}
+		
+	
 		
 		
 		for (int i = 1; i <= num1; i++) {
