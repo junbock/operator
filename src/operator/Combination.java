@@ -1,8 +1,9 @@
 package operator;
-/* ���� ����
- * a�� b���� ũ�ų� ���ƾ���,�ƴϸ� -1 ��ȯ
- * a�� b�� �ڿ����� �ƴϸ� -1 ��ȯ
- */
+/* 조합 계산기
+ * 비정상입력 (예외)
+ * 	입력값 자연수가 아니면 -1 출력
+ * 	num1 이 num2보다 작으면 -1 출력
+*/
 public class Combination implements Calculator {
 	public double calculate(int num1, int num2) {
 		double up = 1.0;
@@ -15,8 +16,6 @@ public class Combination implements Calculator {
 		if (num1 < num2) {
 			return -1.0;
 		}
-		
-	
 		
 		
 		for (int i = 1; i <= num1; i++) {
