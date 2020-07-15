@@ -65,7 +65,7 @@ public class Test {
 
 		}
 
-
+	
 //		//정상 동작 1) 6 출력
 //		System.out.println(com.calculate(4, 2));
 //		//정상 동작 2) 1 출력
