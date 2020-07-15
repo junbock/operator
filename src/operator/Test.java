@@ -1,19 +1,76 @@
 package operator;
 
+import java.util.Scanner;
+
 public class Test {
 	public static void main(String[] args) {
-		//div test
-		Calculator div = new Div();
-		//1.5 Ãâ·Â
-		System.out.println(div.calculate(3, 2));
-		
-		//combination test
+		// div test
+
+		Scanner s = new Scanner(System.in);
+
 		Calculator com = new Combination();
-		//Á¤»ó µ¿ÀÛ 12 Ãâ·Â
-		System.out.println(com.calculate(4, 2));
-		//Àß¸øµÈ ÀÔ·Â : a<b, -1 Ãâ·Â
-		System.out.println(com.calculate(2, 4));
-		//Àß¸øµÈ ÀÔ·Â : a or b ÀÚ¿¬¼ö ¾Æ´Ô, -1 Ãâ·Â
-		System.out.println(com.calculate(5, -3));
-	}	
+
+		Calculator div = new Div();
+
+		System.out.println("ì›í•˜ì‹œëŠ” ì—°ì‚°ì„ ìž…ë ¥í•˜ì‹œì˜¤!:  + - * / !");
+
+		char f = s.next().charAt(0);
+
+		System.out.println("ì²«ë²ˆì§¸ ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì‹œì˜¤.");
+
+		int num1 = s.nextInt();
+
+		System.out.println("ë‘ë²ˆì§¸ ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì‹œì˜¤.");
+
+		int num2 = s.nextInt();
+		// System.out.println( " " + num2);
+
+		System.out.println();
+
+		switch (f) {
+		case '+': //
+			System.out.printf("Answer: %d+%d=%d \n", num1, num2, Add.add(num1, num2));
+			break;
+
+		case '-':
+			System.out.printf("Answer: %d-%d=%d \n", num1, num2, minus.calculate(num1, num2));
+			break;
+
+		case '*':
+			System.out.printf("Answer:%d*%d=%d \n", num1, num2, mul.calculate(num1, num2));
+			break;
+
+		case '/':
+			System.out.printf("Answer:%d/%d=%d", num1, num2, div.calculate(num1, num2));
+			break;
+
+		// 2, 3
+
+		// 1*2 / 1*2*3
+
+		case '!':
+			if (num1 > num2) {
+
+				System.out.printf("Answer:" + num2 + "! / " + num1 + "! = " + com.calculate(num1, num2));
+				break;
+
+			} else {
+				System.out.printf("Answer:" + num1 + "! / " + num2 + "! = " + com.calculate(num1, num2));
+				break;
+			}
+
+		default:
+			System.out.println("ë‹¤ì‹œ ìž…ë ¥í•˜ì„¸ìš”.");
+
+		}
+
+//		//combination test
+//		Calculator com = new Combination();
+//		//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 12 ï¿½ï¿½ï¿½
+//		System.out.println(com.calculate(4, 2));
+//		//ï¿½ß¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : a<b, -1 ï¿½ï¿½ï¿½
+//		System.out.println(com.calculate(2, 4));
+//		//ï¿½ß¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : a or b ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½, -1 ï¿½ï¿½ï¿½
+//		System.out.println(com.calculate(5, -3));
+	}
 }
