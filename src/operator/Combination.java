@@ -1,8 +1,9 @@
 package operator;
-/* Á¶ÇÕ °è»ê±â
- * a°¡ bº¸´Ù Å©°Å³ª °°¾Æ¾ßÇÔ,¾Æ´Ï¸é -1 ¹İÈ¯
- * a¿Í b°¡ ÀÚ¿¬¼ö°¡ ¾Æ´Ï¸é -1 ¹İÈ¯
- */
+/* ì¡°í•© ê³„ì‚°ê¸°
+ * ë¹„ì •ìƒì…ë ¥ (ì˜ˆì™¸)
+ * 	ì…ë ¥ê°’ ìì—°ìˆ˜ê°€ ì•„ë‹ˆë©´ -1 ì¶œë ¥
+ * 	num1 ì´ num2ë³´ë‹¤ ì‘ìœ¼ë©´ -1 ì¶œë ¥
+*/
 public class Combination implements Calculator {
 	public double calculate(int num1, int num2) {
 		double up = 1.0;

@@ -4,20 +4,20 @@ public class Test {
 	public static void main(String[] args) {
 		//div test
 		Calculator div = new Div();
-		//1.5 Ãâ·Â
+		//1.5 ì¶œë ¥
 		System.out.println(div.calculate(3, 2));
-		//0 div ¿¡·¯ 
+		//0 div error 
 		//System.out.println(div.calculate(4, 0));
 		
 		//combination test
 		Calculator com = new Combination();
-		//Á¤»ó µ¿ÀÛ 1) 12 Ãâ·Â
+		//ì •ìƒì¶œë ¥ 1) 12 ì¶œë ¥
 		System.out.println(com.calculate(4, 2));
-		//Á¤»ó µ¿ÀÛ 2) 1 Ãâ·Â
+		//ì •ìƒì¶œë ¥ 2) 1  ì¶œë ¥
 		System.out.println(com.calculate(5, 5));
-		//Àß¸øµÈ ÀÔ·Â : a<b, -1 Ãâ·Â
+		//ë¹„ì •ìƒ ì…ë ¥: a<b, -1 ì¶œë ¥
 		System.out.println(com.calculate(2, 4));
-		//Àß¸øµÈ ÀÔ·Â : a or b ÀÚ¿¬¼ö ¾Æ´Ô, -1 Ãâ·Â
+		//ë¹„ì •ìƒ ì…ë µ : a or b ì´ ìì—°ìˆ˜ ì•„ë‹˜, -1 ì¶œë ¥
 		System.out.println(com.calculate(5, -3));
 	}	
 }
