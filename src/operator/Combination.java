@@ -17,8 +17,6 @@ public class Combination implements Calculator {
 			return -1.0;
 		}
 		
-	
-		
 		
 		for (int i = 1; i <= num1; i++) {
 			up *= i;

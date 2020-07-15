@@ -6,5 +6,4 @@ public class Mul {
 		
 		return (double)num1 * num2;
 	}
-
 }

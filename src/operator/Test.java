@@ -34,7 +34,7 @@ public class Test {
 			break;
 
 		case '-':
-			System.out.printf("Answer: %d-%d=%d \n", num1, num2, minus.calculate(num1, num2));
+			System.out.printf("Answer: %d-%d=%d \n", num1, num2, Minus.calculate(num1, num2));
 			break;
 
 		case '*':
@@ -84,3 +84,4 @@ public class Test {
 //				System.out.println(com.calculate(5, -3));
 	}
 }
+		
