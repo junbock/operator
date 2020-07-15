@@ -13,15 +13,15 @@ public class Test {
 
 		Calculator div = new Div();
 
-		System.out.println("원하시는 연산을 입력하시오!:  + - * / !");
+		System.out.println("�썝�븯�떆�뒗 �뿰�궛�쓣 �엯�젰�븯�떆�삤!:  + - * / !");
 
 		char f = s.next().charAt(0);
 
-		System.out.println("첫번째 숫자를 입력하시오.");
+		System.out.println("泥ル쾲吏� �닽�옄瑜� �엯�젰�븯�떆�삤.");
 
 		int num1 = s.nextInt();
 
-		System.out.println("두번째 숫자를 입력하시오.");
+		System.out.println("�몢踰덉㎏ �닽�옄瑜� �엯�젰�븯�떆�삤.");
 
 		int num2 = s.nextInt();
 		// System.out.println( " " + num2);
@@ -29,13 +29,13 @@ public class Test {
 		System.out.println();
 
 		switch (f) {
-		case '+': //
-			System.out.printf("Answer: %d+%d=%d \n", num1, num2, Add.add(num1, num2));
-			break;
+//		case '+': //
+//			System.out.printf("Answer: %d+%d=%d \n", num1, num2, Add.add(num1, num2));
+//			break;
 
-		case '-':
-			System.out.printf("Answer: %d-%d=%d \n", num1, num2, Minus.calculate(num1, num2));
-			break;
+//		case '-':
+//			System.out.printf("Answer: %d-%d=%d \n", num1, num2, Minus.calculate(num1, num2));
+//			break;
 
 		case '*':
 			System.out.printf("Answer:%d*%d=%d \n", num1, num2, Mul.calculate(num1, num2));
@@ -61,27 +61,19 @@ public class Test {
 			}
 
 		default:
-			System.out.println("다시 입력하세요.");
+			System.out.println("�떎�떆 �엯�젰�븯�꽭�슂.");
 
 		}
 
-//		//div test
-//				Calculator div = new Div();
-//				//1.5 출력
-//				System.out.println(div.calculate(3, 2));
-//				//0 div error 
-//				//System.out.println(div.calculate(4, 0));
-//				
-//				//combination test
-//				Calculator com = new Combination();
-//				//정상출력 1) 12 출력
-//				System.out.println(com.calculate(4, 2));
-//				//정상출력 2) 1  출력
-//				System.out.println(com.calculate(5, 5));
-//				//비정상 입력: a<b, -1 출력
-//				System.out.println(com.calculate(2, 4));
-//				//비정상 입렵 : a or b 이 자연수 아님, -1 출력
-//				System.out.println(com.calculate(5, -3));
-	}
+
+//		//정상 동작 1) 6 출력
+//		System.out.println(com.calculate(4, 2));
+//		//정상 동작 2) 1 출력
+//		System.out.println(com.calculate(5, 5));
+//		//잘못된 입력 : a<b, -1 출력
+//		System.out.println(com.calculate(2, 4));
+//		//잘못된 입력 : a or b 자연수 아님, -1 출력
+//		System.out.println(com.calculate(5, -3));
+	}	
 }
 		
