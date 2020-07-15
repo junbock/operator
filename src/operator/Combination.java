@@ -25,6 +25,10 @@ public class Combination implements Calculator {
 			down *= i;
 		}
 		
+		for (int i = 1; i <= num1-num2; i++) {
+			down *= i;
+		}
+		
 		return up/down;
 	}
 }

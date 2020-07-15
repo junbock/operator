@@ -11,7 +11,7 @@ public class Test {
 		
 		//combination test
 		Calculator com = new Combination();
-		//정상 동작 1) 12 출력
+		//정상 동작 1) 6 출력
 		System.out.println(com.calculate(4, 2));
 		//정상 동작 2) 1 출력
 		System.out.println(com.calculate(5, 5));
